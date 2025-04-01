@@ -11,6 +11,17 @@ button:hover {
   background-color: rgb(150, 150, 150);
 }
 
+/* .handjet-<uniquifier> {
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
+} */
+ 
+
 body {
   background-color: rgb(24, 24, 24);
   display: flex;
@@ -53,6 +64,29 @@ body {
 }
 
 .publik {
-  width: 1200px;
+  max-width: 1200px;
   border-radius: 15px;
 }
+
+.concert-image {
+  display: flex;
+  justify-content: end;
+  width: 1200px;
+  height: 800px;
+  background-image: url(images/Publik_test.webp);
+}
+
+.date {
+  padding: 0;
+  font-family: "New Rocker", system-ui;
+  color: rgb(0, 0, 0);
+  margin-right: 80px;
+  font-size: 120px;
+}
+
+.date p {
+  padding: 80px;
+  margin: 0px;
+}
+
+
