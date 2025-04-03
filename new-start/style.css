@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    /* display: block;
+    object-fit: cover; */
+}
+
+button:hover {
+    background-color: rgb(150, 150, 150);
+  }
+
+  .logo {
+    border-color: black;
+  }
