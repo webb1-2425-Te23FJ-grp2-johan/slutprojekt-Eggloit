@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+}
+
+body {
+  background-color: rgb(102, 102, 102);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.Guns-N-Roses,
+.nirvana,
+.green-day,
+.foo-fighters {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.Guns-N-Roses p,
+.nirvana p,
+.green-day p,
+.foo-fighters p {
+  font-size: 60px;
+  color: rgb(177, 162, 162);
+  font-family: "New Rocker", system-ui;
+  background-color: black;
+  margin-top: 180px;
+}
+
+.Guns-N-Roses {
+  background-image: url(images/background-images/guns-n-roses-live-test.webp);
+  height: 800px;
+}
+
+.nirvana {
+  background-image: url(images/background-images/nirvana-live-test.webp);
+  height: 600px;
+}
+
+.green-day {
+  background-image: url(images/background-images/green-day-test.webp);
+  height: 800px;
+}
+
+.foo-fighters {
+    background-image: url(images/background-images/foo-fighters-test.webp);
+    height: 600px;
+}
