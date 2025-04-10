@@ -8,7 +8,7 @@ img {
 }
 
 body {
-  background-color: rgb(102, 102, 102);
+  background-color: rgb(133, 133, 133);
   display: flex;
   justify-content: center;
 }
@@ -16,6 +16,8 @@ body {
 .container {
   max-width: 1200px;
   width: 100%;
+  padding: 20px;
+  background-color: rgb(61, 61, 61);
 }
 
 h1 {
@@ -26,21 +28,51 @@ h1 {
 .header {
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-family: "New Rocker", system-ui;
+  font-size: 40px;
+  height: 100px;
 }
 
-.Guns-N-Roses,
+/* .bands {
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    "guns foo"
+    "nirvana gday"
+    "alice  gday";
+} */
+
+.bands {
+  display: grid;
+  gap: 20px;
+  grid-auto-rows: 390px;
+  grid-template-areas:
+    "nirvana ."
+    "nirvana  foo"
+    "guns  foo"
+    "guns  gday"
+    "alice  gday"
+    "alice  ."
+    ;
+}
+
+.guns-n-roses,
+.foo-fighters,
 .nirvana,
 .green-day,
-.foo-fighters {
+.alice-in-chains {
   display: flex;
   justify-content: center;
   align-items: start;
+  border-radius: 15px;
 }
 
-.Guns-N-Roses p,
+.guns-n-roses p,
+.foo-fighters p,
 .nirvana p,
 .green-day p,
-.foo-fighters p {
+.alice-in-chains p {
   font-size: 60px;
   color: rgb(177, 162, 162);
   font-family: "New Rocker", system-ui;
@@ -48,22 +80,32 @@ h1 {
   margin-top: 180px;
 }
 
-.Guns-N-Roses {
+.guns-n-roses {
   background-image: url(images/background-images/guns-n-roses-live-test.webp);
   height: 800px;
+  grid-area: guns;
+}
+
+.foo-fighters {
+  background-image: url(images/background-images/foo-fighters-test2.webp);
+  height: 800px;
+  grid-area: foo;
 }
 
 .nirvana {
   background-image: url(images/background-images/nirvana-live-test.webp);
-  height: 600px;
+  height: 800px;
+  grid-area: nirvana;
 }
 
 .green-day {
   background-image: url(images/background-images/green-day-test.webp);
   height: 800px;
+  grid-area: gday;
 }
 
-.foo-fighters {
-    background-image: url(images/background-images/foo-fighters-test.webp);
-    height: 600px;
+.alice-in-chains {
+  background-image: url(images/background-images/alice-in-chains-test.webp);
+  height: 800px;
+  grid-area: alice;
 }
