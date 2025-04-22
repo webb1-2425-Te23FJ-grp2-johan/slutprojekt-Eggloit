@@ -11,6 +11,8 @@ body {
   background-color: rgb(133, 133, 133);
   display: flex;
   justify-content: center;
+  width: 100%;
+  margin: 0px;
 }
 
 .container {
@@ -34,27 +36,42 @@ h1 {
   height: 100px;
 }
 
-/* .bands {
-  display: grid;
-  gap: 30px;
-  grid-template-areas:
-    "guns foo"
-    "nirvana gday"
-    "alice  gday";
-} */
+
+  .bands {
+    grid-template-areas:
+      "nirvana"
+      "foo"
+      "guns"
+      "gday"
+      "alice";
+  }
+
+  @media screen and (min-width: 0px) {
+    .nirvana {
+      background-image: url(images/background-images/nirvana-1000x800.webp);
+    }
+  }
+
+
+@media screen and (min-width: 1000px) {
+  .bands {
+    grid-auto-rows: 390px;
+    grid-template-areas:
+      ".  nirvana"
+      "foo  nirvana"
+      "foo  guns"
+      "gday  guns"
+      "gday  alice"
+      ".  alice";
+  }
+  .nirvana {
+    background-image: url(images/background-images/nirvana-630x800.webp);
+  }
+}
 
 .bands {
   display: grid;
   gap: 20px;
-  grid-auto-rows: 390px;
-  grid-template-areas:
-    "nirvana ."
-    "nirvana  foo"
-    "guns  foo"
-    "guns  gday"
-    "alice  gday"
-    "alice  ."
-    ;
 }
 
 .guns-n-roses,
@@ -66,6 +83,7 @@ h1 {
   justify-content: center;
   align-items: start;
   border-radius: 15px;
+  height: 800px;
 }
 
 .guns-n-roses p,
@@ -82,30 +100,25 @@ h1 {
 
 .guns-n-roses {
   background-image: url(images/background-images/guns-n-roses-live-test.webp);
-  height: 800px;
   grid-area: guns;
 }
 
 .foo-fighters {
   background-image: url(images/background-images/foo-fighters-test2.webp);
-  height: 800px;
   grid-area: foo;
 }
 
 .nirvana {
-  background-image: url(images/background-images/nirvana-live-test.webp);
-  height: 800px;
+
   grid-area: nirvana;
 }
 
 .green-day {
   background-image: url(images/background-images/green-day-test.webp);
-  height: 800px;
   grid-area: gday;
 }
 
 .alice-in-chains {
   background-image: url(images/background-images/alice-in-chains-test.webp);
-  height: 800px;
   grid-area: alice;
 }
