@@ -31,31 +31,53 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "New Rocker", system-ui;
-  font-size: 40px;
+
   height: 100px;
+  background-color: black;
 }
 
+.header h1 {
+  background-color: black;
+  color: rgb(177, 162, 162);
+  font-family: "New Rocker", system-ui;
+  font-size: 40px;
+}
 
-  .bands {
-    grid-template-areas:
-      "nirvana"
-      "foo"
-      "guns"
-      "gday"
-      "alice";
+.bands {
+  margin-top: 40px;
+  grid-template-areas:
+    "nirvana"
+    "foo"
+    "guns"
+    "gday"
+    "alice";
+}
+
+@media screen and (min-width: 0px) {
+  .nirvana {
+    background-image: url(images/background-images/nirvana-500x800.webp);
   }
+}
 
-  @media screen and (min-width: 0px) {
-    .nirvana {
-      background-image: url(images/background-images/nirvana-1000x800.webp);
-    }
+@media screen and (min-width: 540px) {
+  .nirvana {
+    background-image: url(images/background-images/nirvana-700x800.webp);
   }
+}
 
+@media screen and (min-width: 700px) {
+  .nirvana {
+    background-image: url(images/background-images/nirvana-1000x800.webp);
+  }
+  .foo-fighters {
+    background-image: url(images/background-images/foo-fighters-1000x800px.webp);
+  }
+}
 
 @media screen and (min-width: 1000px) {
   .bands {
     grid-auto-rows: 390px;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       ".  nirvana"
       "foo  nirvana"
@@ -65,7 +87,10 @@ h1 {
       ".  alice";
   }
   .nirvana {
-    background-image: url(images/background-images/nirvana-630x800.webp);
+    background-image: url(images/background-images/nirvana-570x800.webp);
+  }
+  .foo-fighters {
+    background-image: url(images/background-images/foo-fighters-570x800px.webp);
   }
 }
 
@@ -104,12 +129,11 @@ h1 {
 }
 
 .foo-fighters {
-  background-image: url(images/background-images/foo-fighters-test2.webp);
+  /* background-image: url(images/background-images/foo-fighters-test2.webp); */
   grid-area: foo;
 }
 
 .nirvana {
-
   grid-area: nirvana;
 }
 
