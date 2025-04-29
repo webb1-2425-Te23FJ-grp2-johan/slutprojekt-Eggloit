@@ -57,11 +57,23 @@ h1 {
   .nirvana {
     background-image: url(images/background-images/nirvana-500x800.webp);
   }
+  .foo-fighters {
+    background-image: url(images/background-images/foo-fighters-500x800px.webp);
+  }
+  .guns-n-roses {
+    background-image: url(images/background-images/guns-n-roses-500x800px.webp);
+  }
 }
 
 @media screen and (min-width: 540px) {
   .nirvana {
     background-image: url(images/background-images/nirvana-700x800.webp);
+  }
+  .foo-fighters {
+    background-image: url(images/background-images/foo-fighters-700x800px.webp);
+  }
+  .guns-n-roses {
+    background-image: url(images/background-images/guns-n-roses-700x800px.webp);
   }
 }
 
@@ -71,6 +83,9 @@ h1 {
   }
   .foo-fighters {
     background-image: url(images/background-images/foo-fighters-1000x800px.webp);
+  }
+  .guns-n-roses {
+    background-image: url(images/background-images/guns-n-roses-1000x800px.webp);
   }
 }
 
@@ -91,6 +106,9 @@ h1 {
   }
   .foo-fighters {
     background-image: url(images/background-images/foo-fighters-570x800px.webp);
+  }
+  .guns-n-roses {
+    background-image: url(images/background-images/guns-n-roses-570x800px.webp);
   }
 }
 
@@ -124,7 +142,7 @@ h1 {
 }
 
 .guns-n-roses {
-  background-image: url(images/background-images/guns-n-roses-live-test.webp);
+  /* background-image: url(images/background-images/guns-n-roses-live-test.webp); */
   grid-area: guns;
 }
 
