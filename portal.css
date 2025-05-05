@@ -63,6 +63,12 @@ h1 {
   .guns-n-roses {
     background-image: url(images/background-images/guns-n-roses-500x800px.webp);
   }
+  .green-day {
+    background-image: url(images/background-images/green-day-500x800px.webp);
+  }
+  .alice-cooper {
+    background-image: url(images/background-images/alice-cooper-500x800px.webp);
+  }
 }
 
 @media screen and (min-width: 540px) {
@@ -75,6 +81,12 @@ h1 {
   .guns-n-roses {
     background-image: url(images/background-images/guns-n-roses-700x800px.webp);
   }
+  .green-day {
+    background-image: url(images/background-images/green-day-700x800px.webp);
+  }
+  .alice-cooper {
+    background-image: url(images/background-images/alice-cooper-700x800px.webp);
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -86,6 +98,12 @@ h1 {
   }
   .guns-n-roses {
     background-image: url(images/background-images/guns-n-roses-1000x800px.webp);
+  }
+  .green-day {
+    background-image: url(images/background-images/green-day-1000x800px.webp);
+  }
+  .alice-cooper {
+    background-image: url(images/background-images/alice-cooper-1000x800px.webp);
   }
 }
 
@@ -110,6 +128,12 @@ h1 {
   .guns-n-roses {
     background-image: url(images/background-images/guns-n-roses-570x800px.webp);
   }
+  .green-day {
+    background-image: url(images/background-images/green-day-570x800px.webp);
+  }
+  .alice-cooper {
+    background-image: url(images/background-images/alice-cooper-570x800px.webp);
+  }
 }
 
 .bands {
@@ -121,7 +145,7 @@ h1 {
 .foo-fighters,
 .nirvana,
 .green-day,
-.alice-in-chains {
+.alice-cooper {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -133,7 +157,7 @@ h1 {
 .foo-fighters p,
 .nirvana p,
 .green-day p,
-.alice-in-chains p {
+.alice-cooper p {
   font-size: 60px;
   color: rgb(177, 162, 162);
   font-family: "New Rocker", system-ui;
@@ -156,11 +180,9 @@ h1 {
 }
 
 .green-day {
-  background-image: url(images/background-images/green-day-test.webp);
   grid-area: gday;
 }
 
-.alice-in-chains {
-  background-image: url(images/background-images/alice-in-chains-test.webp);
+.alice-cooper {
   grid-area: alice;
 }
