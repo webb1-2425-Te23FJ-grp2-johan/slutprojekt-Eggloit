@@ -263,3 +263,17 @@ body {
   font-size: 30px;
   border-radius: 15px;
 }
+
+.nirvana-text,
+.foo-fighters-text,
+.guns-n-roses-text,
+.green-day-text,
+.alice-cooper-text {
+  /* background-color: rgba(3, 14, 22, 0.75); */
+}
+
+#nirvana-logo {
+  width: 70px;
+  height: 70px;
+  margin-left: 40px;
+}
