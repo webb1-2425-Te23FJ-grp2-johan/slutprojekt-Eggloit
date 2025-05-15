@@ -12,7 +12,7 @@ button:hover {
 }
 
 body {
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(136, 136, 136);
   display: flex;
   justify-content: center;
 }
@@ -28,7 +28,7 @@ body {
   height: auto;
   background-color: rgb(0, 0, 0);
   display: flex;
-  align-items: start;
+  /* align-items: start; */
   justify-content: space-between;
   border-radius: 15px;
   margin: 20px 0px 30px;  
@@ -74,4 +74,13 @@ body {
 .date p {
   padding: 80px;
   margin: 0px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+}
+
+.text p {
+  font-size: 30px;
 }

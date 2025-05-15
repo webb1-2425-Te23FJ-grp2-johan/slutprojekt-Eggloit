@@ -9,11 +9,30 @@ img {
 
 a {
   text-decoration: none;
+  color: #b1a2a2;
+}
+
+h1 {
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
   color: rgb(177, 162, 162);
+  font-family: "New Rocker", system-ui;
+  font-size: 70px;
+}
+
+h2 {
+  padding: 20px 30px;
+  margin: 30px;
+  font-size: 50px;
+  font-family: "New Rocker", system-ui;
+  color: rgb(177, 162, 162);
+  background-color: rgba(3, 14, 22, 0.85);
 }
 
 body {
-  background: url(images/background-images/backgrund-test-3200x1700px.webp) no-repeat center center fixed;
+  background: url(images/background-images/backgrund-test-3200x1700px.webp)
+    no-repeat center center fixed;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -25,15 +44,6 @@ body {
   width: 100%;
   padding: 20px;
   background-color: rgba(65, 65, 65, 0.9);
-}
-
-h1 {
-  padding: 0px;
-  margin: 0px;
-  background-color: black;
-  color: rgb(177, 162, 162);
-  font-family: "New Rocker", system-ui;
-  font-size: 70px;
 }
 
 .header {
@@ -65,8 +75,6 @@ h1 {
   margin-right: 40px;
 }
 
-
-
 .bands {
   display: grid;
   gap: 20px;
@@ -77,7 +85,8 @@ h1 {
     "foo"
     "guns"
     "gday"
-    "alice";
+    "alice"
+    "text2";
 }
 
 @media screen and (min-width: 0px) {
@@ -144,7 +153,7 @@ h1 {
       "foo  guns"
       "gday  guns"
       "gday  alice"
-      ".  alice";
+      "text2  alice";
   }
   .nirvana {
     background-image: url(images/background-images/nirvana-570x800.webp);
@@ -189,21 +198,27 @@ h1 {
   padding: 10px;
 }
 
-.text1 p{
+.text1 p,
+.text2 p {
   margin: 40px;
   font-family: "New Rocker", system-ui;
   font-size: 32px;
   color: rgb(177, 162, 162);
 }
 
-.text1 {
+.text1,
+.text2 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: rgba(3, 14, 22, 0.75);
-  grid-area: text1;
+
   border-radius: 15px;
+}
+
+.text1 {
+  grid-area: text1;
 }
 
 .guns-n-roses {
@@ -226,3 +241,25 @@ h1 {
   grid-area: alice;
 }
 
+.text2 {
+  grid-area: text2;
+}
+
+.mini-header {
+  display: flex;
+  justify-content: center;
+}
+
+.nirvana-text p,
+.foo-fighters-text p,
+.guns-n-roses-text p,
+.green-day-text p,
+.alice-cooper-text p {
+  padding: 40px;
+  background-color: rgba(3, 14, 22, 0.75);
+  font-family: "New Rocker", system-ui;
+  font-size: 32px;
+  color: rgb(177, 162, 162);
+  font-size: 30px;
+  border-radius: 15px;
+}
