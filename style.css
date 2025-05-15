@@ -11,16 +11,6 @@ button:hover {
   background-color: rgb(150, 150, 150);
 }
 
-/* .handjet-<uniquifier> {
-  font-family: "Handjet", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "ELGR" 1,
-    "ELSH" 2;
-} */
-
 body {
   background-color: rgb(24, 24, 24);
   display: flex;
