@@ -255,6 +255,7 @@ body {
 .guns-n-roses-text p,
 .green-day-text p,
 .alice-cooper-text p {
+  margin: 20px;
   padding: 40px;
   background-color: rgba(3, 14, 22, 0.75);
   font-family: "New Rocker", system-ui;
@@ -273,7 +274,7 @@ body {
 }
 
 #nirvana-logo {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   margin-left: 40px;
 }
