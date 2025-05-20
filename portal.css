@@ -265,16 +265,22 @@ body {
   border-radius: 15px;
 }
 
-.nirvana-text,
+/* .nirvana-text,
 .foo-fighters-text,
 .guns-n-roses-text,
 .green-day-text,
 .alice-cooper-text {
-  /* background-color: rgba(3, 14, 22, 0.75); */
-}
+  background-color: rgba(3, 14, 22, 0.75);
+} */
 
 #nirvana-logo {
   width: 60px;
   height: 60px;
-  margin-left: 40px;
+  margin-left: 60px;
+}
+
+#foo-fighters-logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 60px;  
 }
