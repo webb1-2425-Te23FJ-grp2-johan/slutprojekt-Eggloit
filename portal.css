@@ -67,6 +67,10 @@ body {
   font-family: "New Rocker", system-ui;
 }
 
+.navbar a {
+  background-color: red;
+}
+
 .hem {
   margin-left: 40px;
 }
@@ -201,7 +205,6 @@ body {
 .text1 p,
 .text2 p {
   margin: 40px;
-  /* font-family: "New Rocker", system-ui; */
   font-size: 32px;
   color: rgb(177, 162, 162);
 }
@@ -213,7 +216,6 @@ body {
   align-items: center;
   text-align: center;
   background-color: rgba(3, 14, 22, 0.75);
-
   border-radius: 15px;
 }
 
@@ -246,36 +248,32 @@ body {
 }
 
 .mini-header {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
 
-.nirvana-text p,
-.foo-fighters-text p,
-.guns-n-roses-text p,
-.green-day-text p,
-.alice-cooper-text p {
+#nirvana-text p,
+#foo-fighters-text p,
+#guns-n-roses-text p,
+#green-day-text p,
+#alice-cooper-text p {
   margin: 20px;
   padding: 40px;
   background-color: rgba(3, 14, 22, 0.75);
-  /* font-family: "New Rocker", system-ui; */
-  font-size: 32px;
   color: rgb(177, 162, 162);
   font-size: 30px;
   border-radius: 15px;
+  border-color: black;
 }
 
-/* .nirvana-text,
-.foo-fighters-text,
-.guns-n-roses-text,
-.green-day-text,
-.alice-cooper-text {
-  background-color: rgba(3, 14, 22, 0.75);
-} */
-
-#nirvana-logo {
-  width: 60px;
-  height: 60px;
+#nirvana-text a,
+#foo-fighters-text a,
+#guns-n-roses-text a,
+#green-day-text a,
+#alice-cooper-text a {
+  color: rgb(6,69,173);
+  text-decoration: underline;
 }
 
 #nirvana-logo,
@@ -283,7 +281,7 @@ body {
 #guns-n-roses-logo,
 #green-day-logo,
 #alice-cooper-logo {
-  margin-left: 60px;  
+  margin-left: 60px;
   border-radius: 60px;
   border: solid;
   border-width: 4px;
