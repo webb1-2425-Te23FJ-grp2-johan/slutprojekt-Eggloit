@@ -12,7 +12,8 @@ button:hover {
 }
 
 body {
-  background-image: url(images/background-images/Publik_test.webp);
+    background: url(images/background-images/main-background.webp)
+    no-repeat center center fixed;
   display: flex;
   justify-content: center;
 }
@@ -31,7 +32,7 @@ body {
   /* align-items: start; */
   justify-content: space-between;
   border-radius: 15px;
-  margin: 20px 0px 30px;  
+  margin: 20px 0px 30px;
 }
 
 .logo {

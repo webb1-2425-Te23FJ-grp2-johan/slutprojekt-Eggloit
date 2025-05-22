@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+  padding: 20px 30px;
+  margin: 30px;
+  font-size: 50px;
+  font-family: "New Rocker", system-ui;
+  color: rgb(177, 162, 162);
+  background-color: rgba(3, 14, 22, 0.85);
+}
+
+a {
+  text-decoration: none;
+  color: #b1a2a2;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+}
+
+body {
+  background: url(images/background-images/backgrund-test-3200x1700px.webp)
+    no-repeat center center fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(65, 65, 65, 0.9);
+}
