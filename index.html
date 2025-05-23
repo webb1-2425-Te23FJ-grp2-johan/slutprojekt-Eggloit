@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Artister</title>
+    <title>Artist</title>
     <link
       type="image/png"
       sizes="96x96"
@@ -20,20 +20,35 @@
   </head>
   <body id="top">
     <div class="container">
-      <header class="header">
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#mer-om-artisterna" class="nav-link">Om Artisterna</a>
+          </li>
+          <li class="nav-item">
+            <a href="#mer-om-artisterna" class="nav-link">Nirvana</a>
+          </li>
+          <li class="nav-item">
+            <a href="#foo-fighters-text" class="nav-link">Foo Fighters</a>
+          </li>
+          <li class="nav-item">
+            <a href="#guns-n-roses-text" class="nav-link">Guns N Roses</a>
+          </li>
+          <li class="nav-item">
+            <a href="#green-day-text" class="nav-link">Green Day</a>
+          </li>
+          <li class="nav-item">
+            <a href="#alice-cooper-text" class="nav-link">Alice Cooper</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <div class="header">
         <h1>Linköping Rock</h1>
-      </header>
-      <div class="navbar">
-        <div class="hem">
-          <a href="index.html">
-            <p>Hem</p>
-          </a>
-        </div>
-        <div class="om-artisterna">
-          <a href="#mer-om-artisterna">
-            <p>Om Artisterna</p>
-          </a>
-        </div>
       </div>
       <section id="information">
         <div class="info">
@@ -61,35 +76,35 @@
         </div>
         <div class="nirvana">
           <div class="nirvana2">
-            <a href="#mer-om-artisterna">
+            <a href="#mer-om-artisterna" class="band-links">
               <p>Nirvana</p>
             </a>
           </div>
         </div>
         <div class="foo-fighters">
           <div class="foo-fighters2">
-            <a href="#foo-fighters-text">
+            <a href="#foo-fighters-text" class="band-links">
               <p>Foo Fighters</p>
             </a>
           </div>
         </div>
         <div class="guns-n-roses">
           <div class="guns-n-roses2">
-            <a href="#guns-n-roses-text">
+            <a href="#guns-n-roses-text" class="band-links">
               <p>Guns N Roses</p>
             </a>
           </div>
         </div>
         <div class="green-day">
           <div class="green-day2">
-            <a href="#green-day-text">
+            <a href="#green-day-text" class="band-links">
               <p>Green Day</p>
             </a>
           </div>
         </div>
         <div class="alice-cooper">
           <div class="alice-cooper2">
-            <a href="#alice-cooper-text">
+            <a href="#alice-cooper-text" class="band-links">
               <p>Alice Cooper</p>
             </a>
           </div>
@@ -209,5 +224,6 @@
         </a>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

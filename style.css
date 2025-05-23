@@ -63,19 +63,18 @@ body {
   align-items: center;
   background-color: black;
   border-radius: 15px;
+  margin-top: 20px;
 }
 
-.navbar {
+/* .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(3, 14, 22, 0.75);
-  border-radius: 15px;
   height: 60px;
-  margin-top: 20px;
   font-size: 32px;
   font-family: "New Rocker", system-ui;
-}
+} */
 
 .navbar a {
   text-shadow: 3px 3px 0px rgb(65, 65, 65);
@@ -87,6 +86,11 @@ body {
 
 .om-artisterna {
   margin-right: 40px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
 
 .info {
@@ -163,33 +167,101 @@ body {
   .alice-cooper {
     background-image: url(images/background-images/alice-cooper-570x800px.webp);
   }
+
+    .navbar {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  .nav-menu {
+    gap: 20px;
+  }
 }
 
-  @media screen and (max-width: 1000px) {
-    h1 {
-      font-size: 90px;
-      margin: 25px 0;
-    }
-    h3 {
-      font-size: 80px;
-      text-shadow: 5px 5px 2px rgb(177, 162, 162);
-    }
-    .nirvana {
-      background-image: url(images/background-images/nirvana-1000x800.webp);
-    }
-    .foo-fighters {
-      background-image: url(images/background-images/foo-fighters-1000x800px.webp);
-    }
-    .guns-n-roses {
-      background-image: url(images/background-images/guns-n-roses-1000x800px.webp);
-    }
-    .green-day {
-      background-image: url(images/background-images/green-day-1000x800px.webp);
-    }
-    .alice-cooper {
-      background-image: url(images/background-images/alice-cooper-1000x800px.webp);
-    }
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 90px;
+    margin: 25px 0;
   }
+  h3 {
+    font-size: 80px;
+    text-shadow: 5px 5px 2px rgb(177, 162, 162);
+  }
+  .nirvana {
+    background-image: url(images/background-images/nirvana-1000x800.webp);
+  }
+  .foo-fighters {
+    background-image: url(images/background-images/foo-fighters-1000x800px.webp);
+  }
+  .guns-n-roses {
+    background-image: url(images/background-images/guns-n-roses-1000x800px.webp);
+  }
+  .green-day {
+    background-image: url(images/background-images/green-day-1000x800px.webp);
+  }
+  .alice-cooper {
+    background-image: url(images/background-images/alice-cooper-1000x800px.webp);
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: end;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active {
+    position: fixed;
+    top: 35px;
+    right: 35px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    right: 100%;
+    top: 0;
+    opacity: 0;
+    background-color: rgba(3, 14, 22, 0.75);
+    width: 50%;
+    text-align: start;
+    /* transition: 0.5s; */
+    padding: 40px;
+    height: 100vh;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-item:hover {
+    color: dodgerblue;
+  }
+
+  .nav-menu.active {
+    opacity: 100;
+    right: 0;
+    gap: 40px;
+  }
+}
 
 @media screen and (max-width: 700px) {
   h1 {
@@ -261,7 +333,6 @@ body {
 .green-day p,
 .alice-cooper p {
   font-size: 60px;
-  color: rgb(177, 162, 162);
   font-family: "New Rocker", system-ui;
   background-color: rgba(3, 14, 22, 0.85);
   margin-top: 350px;
@@ -365,4 +436,68 @@ body {
 
 #pil {
   width: 60px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #262626;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0 24px;
+  margin: 0;
+  /* font-size: 25px; */
+  background-color: rgba(3, 14, 22, 0.75);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+  margin-left: 10px;
+}
+
+.band-links {
+  transition: 0.7s ease;
+}
+
+.band-links:hover,
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
