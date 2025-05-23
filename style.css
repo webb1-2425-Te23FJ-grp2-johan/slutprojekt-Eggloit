@@ -204,8 +204,8 @@ body {
 
   .hamburger.active {
     position: fixed;
-    top: 35px;
-    right: 35px;
+    top: 44px;
+    right: 44px;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -228,7 +228,6 @@ body {
     background-color: rgba(3, 14, 22, 0.75);
     width: 50%;
     text-align: start;
-    /* transition: 0.5s; */
     padding: 40px;
     height: 100vh;
     font-size: 28px;
@@ -242,7 +241,7 @@ body {
   }
 
   #nav-item1 {
-    margin-top: 40px;
+    margin-top: 44px;
   }
 
   .nav-item:hover {
