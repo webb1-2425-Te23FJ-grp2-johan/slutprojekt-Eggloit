@@ -327,7 +327,6 @@ body {
   .alice-cooper {
     background-image: url(images/background-images/alice-cooper-570x800px.webp);
   }
-
   .navbar {
     display: flex;
     justify-content: center;
@@ -397,7 +396,6 @@ body {
     position: fixed;
     right: 100%;
     top: 0;
-    opacity: 0;
     background-color: rgba(3, 14, 22, 0.75);
     width: 50%;
     text-align: start;
@@ -422,7 +420,6 @@ body {
   }
 
   .nav-menu.active {
-    opacity: 100;
     right: 0;
     gap: 40px;
   }
