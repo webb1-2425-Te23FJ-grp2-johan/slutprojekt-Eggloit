@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 
 img {
@@ -9,7 +11,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #b1a2a2;
+  color: #ffffff;
 }
 
 h1 {
@@ -41,6 +43,10 @@ h3 {
   font-family: "New Rocker", system-ui;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   background: url(images/background-images/backgrund-test-3200x1700px.webp)
     no-repeat center center fixed;
@@ -57,6 +63,46 @@ body {
   background-color: rgba(65, 65, 65, 0.9);
 }
 
+.navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  margin: 0;
+  background-color: rgba(3, 14, 22, 0.75);
+  border-radius: 15px;
+}
+
+.navbar a {
+  text-shadow: 3px 3px 0px rgb(65, 65, 65);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+  margin-left: 10px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -66,21 +112,8 @@ body {
   margin-top: 20px;
 }
 
-.navbar a {
-  text-shadow: 3px 3px 0px rgb(65, 65, 65);
-}
-
-.hem {
-  margin-left: 40px;
-}
-
 .om-artisterna {
   margin-right: 40px;
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
 }
 
 .info {
@@ -98,12 +131,12 @@ body {
   text-align: center;
 }
 
-.placeholder {
+.lorem {
   text-align: center;
   color: rgb(177, 162, 162);
 }
 
-.placeholder p {
+.lorem p {
   margin: 40px;
 }
 
@@ -120,191 +153,13 @@ body {
     "text2";
 }
 
-@media screen and (min-width: 1000px) {
-  h1 {
-    font-size: 130px;
-  }
-  h3 {
-    font-size: 110px;
-  }
-  .header {
-    padding: 40px;
-  }
-  #bands {
-    grid-auto-rows: 390px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "text1  nirvana"
-      "foo  nirvana"
-      "foo  guns"
-      "gday  guns"
-      "gday  alice"
-      "text2  alice";
-  }
-  .nirvana {
-    background-image: url(images/background-images/nirvana-570x800.webp);
-  }
-  .foo-fighters {
-    background-image: url(images/background-images/foo-fighters-570x800px.webp);
-  }
-  .guns-n-roses {
-    background-image: url(images/background-images/guns-n-roses-570x800px.webp);
-  }
-  .green-day {
-    background-image: url(images/background-images/green-day-570x800px.webp);
-  }
-  .alice-cooper {
-    background-image: url(images/background-images/alice-cooper-570x800px.webp);
-  }
-
-    .navbar {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-  }
-
-  .nav-menu {
-    gap: 20px;
-  }
+.band-links {
+  transition: 0.7s ease;
 }
 
-@media screen and (max-width: 1000px) {
-  h1 {
-    font-size: 90px;
-    margin: 25px 0;
-  }
-  h3 {
-    font-size: 80px;
-    text-shadow: 5px 5px 2px rgb(177, 162, 162);
-  }
-  .nirvana {
-    background-image: url(images/background-images/nirvana-1000x800.webp);
-  }
-  .foo-fighters {
-    background-image: url(images/background-images/foo-fighters-1000x800px.webp);
-  }
-  .guns-n-roses {
-    background-image: url(images/background-images/guns-n-roses-1000x800px.webp);
-  }
-  .green-day {
-    background-image: url(images/background-images/green-day-1000x800px.webp);
-  }
-  .alice-cooper {
-    background-image: url(images/background-images/alice-cooper-1000x800px.webp);
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: end;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .hamburger.active {
-    position: fixed;
-    top: 44px;
-    right: 44px;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .nav-menu {
-    position: fixed;
-    right: 100%;
-    top: 0;
-    opacity: 0;
-    background-color: rgba(3, 14, 22, 0.75);
-    width: 50%;
-    text-align: start;
-    padding: 40px;
-    height: 100vh;
-    font-size: 28px;
-    display: flex;
-    flex-direction: column;
-    backdrop-filter: blur(10px);
-  }
-
-  .nav-item {
-    width: 100%;
-  }
-
-  #nav-item1 {
-    margin-top: 44px;
-  }
-
-  .nav-item:hover {
-    color: dodgerblue;
-  }
-
-  .nav-menu.active {
-    opacity: 100;
-    right: 0;
-    gap: 40px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  h1 {
-    font-size: 70px;
-    margin: 20px 0;
-  }
-  h3 {
-    font-size: 60px;
-    text-shadow: 3px 3px 0px rgb(177, 162, 162);
-  }
-  .nirvana {
-    background-image: url(images/background-images/nirvana-700x800.webp);
-  }
-  .foo-fighters {
-    background-image: url(images/background-images/foo-fighters-700x800px.webp);
-  }
-  .guns-n-roses {
-    background-image: url(images/background-images/guns-n-roses-700x800px.webp);
-  }
-  .green-day {
-    background-image: url(images/background-images/green-day-700x800px.webp);
-  }
-  .alice-cooper {
-    background-image: url(images/background-images/alice-cooper-700x800px.webp);
-  }
-}
-
-@media screen and (max-width: 540px) {
-  h1 {
-    font-size: 50px;
-    margin: 15px 0;
-  }
-  h3 {
-    font-size: 50px;
-    text-shadow: 3px 3px 2px rgb(177, 162, 162);
-  }
-  .nirvana {
-    background-image: url(images/background-images/nirvana-1000x800.webp);
-  }
-  .foo-fighters {
-    background-image: url(images/background-images/foo-fighters-1000x800px.webp);
-  }
-  .guns-n-roses {
-    background-image: url(images/background-images/guns-n-roses-1000x800px.webp);
-  }
-  .green-day {
-    background-image: url(images/background-images/green-day-1000x800px.webp);
-  }
-  .alice-cooper {
-    background-image: url(images/background-images/alice-cooper-1000x800px.webp);
-  }
+.band-links:hover,
+.nav-link:hover {
+  color: dodgerblue;
 }
 
 .guns-n-roses,
@@ -332,13 +187,6 @@ body {
   padding: 10px;
 }
 
-.text1 p,
-.text2 p {
-  margin: 40px;
-  font-size: 32px;
-  color: rgb(177, 162, 162);
-}
-
 .text1,
 .text2 {
   display: flex;
@@ -347,6 +195,13 @@ body {
   text-align: center;
   background-color: rgba(3, 14, 22, 0.75);
   border-radius: 15px;
+}
+
+.text1 p,
+.text2 p {
+  margin: 40px;
+  font-size: 32px;
+  color: rgb(177, 162, 162);
 }
 
 .text1 {
@@ -430,65 +285,204 @@ body {
   width: 60px;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@media screen and (max-width: 1400px) {
+  .arrow-up {
+    right: 100%;
+  }
 }
 
-header {
-  background-color: #262626;
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 130px;
+  }
+  h3 {
+    font-size: 110px;
+  }
+  .header {
+    padding: 40px;
+  }
+  #bands {
+    grid-auto-rows: 390px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "text1  nirvana"
+      "foo  nirvana"
+      "foo  guns"
+      "gday  guns"
+      "gday  alice"
+      "text2  alice";
+  }
+  .nirvana {
+    background-image: url(images/background-images/nirvana-570x800.webp);
+  }
+  .foo-fighters {
+    background-image: url(images/background-images/foo-fighters-570x800px.webp);
+  }
+  .guns-n-roses {
+    background-image: url(images/background-images/guns-n-roses-570x800px.webp);
+  }
+  .green-day {
+    background-image: url(images/background-images/green-day-570x800px.webp);
+  }
+  .alice-cooper {
+    background-image: url(images/background-images/alice-cooper-570x800px.webp);
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    height: 70px;
+  }
+
+  .nav-menu {
+    gap: 20px;
+  }
 }
 
-li {
-  list-style: none;
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 90px;
+    margin: 25px 0;
+  }
+  h3 {
+    font-size: 80px;
+    text-shadow: 5px 5px 2px rgb(177, 162, 162);
+  }
+  .nirvana {
+    background-image: url(images/background-images/nirvana-1000x800.webp);
+  }
+  .foo-fighters {
+    background-image: url(images/background-images/foo-fighters-1000x800px.webp);
+  }
+  .guns-n-roses {
+    background-image: url(images/background-images/guns-n-roses-1000x800px.webp);
+  }
+  .green-day {
+    background-image: url(images/background-images/green-day-1000x800px.webp);
+  }
+  .alice-cooper {
+    background-image: url(images/background-images/alice-cooper-1000x800px.webp);
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: end;
+    height: 60px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active {
+    position: fixed;
+    top: 44px;
+    right: 44px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    right: 100%;
+    top: 0;
+    opacity: 0;
+    background-color: rgba(3, 14, 22, 0.75);
+    width: 50%;
+    text-align: start;
+    padding: 40px;
+    height: 100vh;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  #nav-item1 {
+    margin-top: 44px;
+  }
+
+  .nav-item:hover {
+    color: dodgerblue;
+  }
+
+  .nav-menu.active {
+    opacity: 100;
+    right: 0;
+    gap: 40px;
+  }
 }
 
-a {
-  color: white;
-  text-decoration: none;
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 70px;
+    margin: 20px 0;
+  }
+  h3 {
+    font-size: 60px;
+    text-shadow: 3px 3px 0px rgb(177, 162, 162);
+  }
+  .nirvana {
+    background-image: url(images/background-images/nirvana-700x800.webp);
+  }
+  .foo-fighters {
+    background-image: url(images/background-images/foo-fighters-700x800px.webp);
+  }
+  .guns-n-roses {
+    background-image: url(images/background-images/guns-n-roses-700x800px.webp);
+  }
+  .green-day {
+    background-image: url(images/background-images/green-day-700x800px.webp);
+  }
+  .alice-cooper {
+    background-image: url(images/background-images/alice-cooper-700x800px.webp);
+  }
+
+  .navbar {
+    height: 50px;
+  }
 }
 
-.navbar {
-  min-height: 70px;
-  display: flex;
-  align-items: center;
-  padding: 0 24px;
-  margin: 0;
-  background-color: rgba(3, 14, 22, 0.75);
-  border-radius: 15px;
-}
-
-.nav-menu {
-  display: flex;
-  justify-content: start;
-  align-items: start;
-}
-
-.nav-branding {
-  font-size: 2rem;
-}
-
-.nav-link {
-  transition: 0.7s ease;
-  margin-left: 10px;
-}
-
-.band-links {
-  transition: 0.7s ease;
-}
-
-.band-links:hover,
-.nav-link:hover {
-  color: dodgerblue;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 50px;
+    margin: 15px 0;
+  }
+  h3 {
+    font-size: 50px;
+    text-shadow: 3px 3px 2px rgb(177, 162, 162);
+  }
+  .nirvana {
+    background-image: url(images/background-images/nirvana-1000x800.webp);
+  }
+  .foo-fighters {
+    background-image: url(images/background-images/foo-fighters-1000x800px.webp);
+  }
+  .guns-n-roses {
+    background-image: url(images/background-images/guns-n-roses-1000x800px.webp);
+  }
+  .green-day {
+    background-image: url(images/background-images/green-day-1000x800px.webp);
+  }
+  .alice-cooper {
+    background-image: url(images/background-images/alice-cooper-1000x800px.webp);
+  }
+  .navbar {
+    height: 45px;
+  }
 }
