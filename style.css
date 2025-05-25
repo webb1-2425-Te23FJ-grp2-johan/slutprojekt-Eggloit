@@ -88,7 +88,7 @@ body {
   margin-left: 10px;
 }
 
-.hamburger {
+.hamburgare {
   display: none;
   cursor: pointer;
 }
@@ -273,7 +273,7 @@ body {
   border-width: 4px;
 }
 
-.arrow-up {
+.pil-upp {
   background-color: white;
   position: fixed;
   margin-left: 1200px;
@@ -286,7 +286,7 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
-  .arrow-up {
+  .pil-upp {
     right: 100%;
   }
 }
@@ -371,25 +371,25 @@ body {
     height: 60px;
   }
 
-  .hamburger {
+  .hamburgare {
     display: block;
   }
 
-  .hamburger.active {
+  .hamburgare.active {
     position: fixed;
-    top: 44px;
+    top: 37px;
     right: 44px;
   }
 
-  .hamburger.active .bar:nth-child(2) {
+  .hamburgare.active .bar:nth-child(2) {
     opacity: 0;
   }
 
-  .hamburger.active .bar:nth-child(1) {
+  .hamburgare.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
 
-  .hamburger.active .bar:nth-child(3) {
+  .hamburgare.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 
@@ -452,9 +452,11 @@ body {
   .alice-cooper {
     background-image: url(images/background-images/alice-cooper-700x800px.webp);
   }
-
   .navbar {
     height: 50px;
+  }
+  .hamburgare.active {
+    top: 32px;
   }
 }
 
@@ -468,21 +470,24 @@ body {
     text-shadow: 3px 3px 2px rgb(177, 162, 162);
   }
   .nirvana {
-    background-image: url(images/background-images/nirvana-1000x800.webp);
+    background-image: url(images/background-images/nirvana-500x800.webp);
   }
   .foo-fighters {
-    background-image: url(images/background-images/foo-fighters-1000x800px.webp);
+    background-image: url(images/background-images/foo-fighters-500x800px.webp);
   }
   .guns-n-roses {
-    background-image: url(images/background-images/guns-n-roses-1000x800px.webp);
+    background-image: url(images/background-images/guns-n-roses-500x800px.webp);
   }
   .green-day {
-    background-image: url(images/background-images/green-day-1000x800px.webp);
+    background-image: url(images/background-images/green-day-500x800px.webp);
   }
   .alice-cooper {
-    background-image: url(images/background-images/alice-cooper-1000x800px.webp);
+    background-image: url(images/background-images/alice-cooper-500x800px.webp);
   }
   .navbar {
     height: 45px;
+  }
+  .hamburgare.active {
+    top: 30px;
   }
 }
